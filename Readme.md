@@ -8,9 +8,17 @@
 - หรือถ้ามี Solution อื่น ก็สามารถเปลี่ยนท่าได้นะครับ
 - มี Unit test
 - อัพเป็น tag version เช่น v1.0.0
+___
+## ใช้ Casbin RESTful Adapter on Fiber Web Framework
+https://github.com/prongbang/fiber-casbinrest/blob/master/README.md
+- ใช้แบบ Adapter File (แก้ไข Config File ที่ policy.csv)
 
-### Architecture
-- เป็น middlware lib
-- config โยนค่า roles และ permission เข้าไปใน middleware
-- ส่งผ่านความสมารถไปยัง contorller โดยส่งผ่าน context ว่าสมารถทำอะไรได้บ้าง
-- ถ้าไม่มีสิทธิ์ return 401
+___
+# Starter of Golang Fiber Framework
+
+## How to run this project
+1. go mod tidy
+2. air run server.go
+
+## Connection
+- MongoDB => mongodb+srv://golang-starter:lubgNuy0zTBv2yzT@flowstock.jpkb8.mongodb.net/golang-starter?retryWrites=true&w=majority

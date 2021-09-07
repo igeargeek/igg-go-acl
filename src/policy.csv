@@ -1,0 +1,7 @@
+p, admin, /*, (GET)|(POST)|(PUT)|(PATCH)|(DELETE)|(OPTIONS)
+
+p, user, /v1/users, (GET)
+p, user, /v1/users/:id, (GET)
+
+p, anonymous, /v1/auth/login, (POST)
+p, anonymous, /v1/auth/refresh-token, (GET)

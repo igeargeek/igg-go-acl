@@ -1,0 +1,24 @@
+version: '3.2'
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: ["/bin/sh", "-c", "air run server.go"]
+    environment:
+      - HOST=0.0.0.0
+      - PORT=3333
+      - NODE_ENV=development
+      - SECRET_KEY=golang-strater
+      - DB_CONNECTION=mongodb+srv://golang-starter:lubgNuy0zTBv2yzT@flowstock.jpkb8.mongodb.net/golang-starter?retryWrites=true&w=majority
+      - DB_NAME=golang-starter
+    volumes:
+      - ./:/usr/app
+    ports:
+      - "3333:3333"
+
+
+# networks:
+#   default:
+#     external:
+#       name: golang-starter
