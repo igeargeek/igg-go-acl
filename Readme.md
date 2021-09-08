@@ -1,4 +1,5 @@
 # IGG-GO-ACL
+DOC: https://igeargeek.atlassian.net/wiki/spaces/POC/pages/80281601/ACL+GOLANG
 ___
 ## ใช้ Casbin RESTful Adapter on Fiber Web Framework
 https://github.com/prongbang/fiber-casbinrest/blob/master/README.md
